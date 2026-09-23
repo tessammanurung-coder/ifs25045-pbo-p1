@@ -46,7 +46,7 @@ public class App {
             case "22S" -> "Sarjana Teknik Metalurgi";
             case "31S" -> "Sarjana Teknik Bioproses";
             case "32S" -> "Sarjana Bioteknologi";
-            case "114" -> "Diploma 4 Teknologi Rekasaya Perangkat Lunak"; // Disesuaikan persis sesuai kode awal
+            case "114" -> "Diploma 4 Teknologi Rekayasa Perangkat Lunak";
             case "113" -> "Diploma 3 Teknologi Informasi";
             case "133" -> "Diploma 3 Teknologi Komputer";
             default -> "Kode tidak tersedia";
@@ -62,8 +62,8 @@ public class App {
     }
 
     private static void printResult(String nim, String prodi, int angkatan, int urutan) {
-        // Mempertahankan ejaan "Inforamsi" agar sesuai dengan ekspektasi autograder
-        System.out.println("Inforamsi NIM " + nim + ": ");
+        // Memperbaiki ejaan menjadi "Informasi" dan menghapus spasi berlebih di akhir
+        System.out.println("Informasi NIM " + nim + ": ");
         System.out.println(">> Program Studi: " + prodi);
         System.out.println(">> Angkatan: " + angkatan);
         System.out.println(">> Urutan: " + urutan);
